@@ -21,14 +21,30 @@ userInterface.prototype.startMenu = function(){
         }
     ]).then(function(inquirerResponse){
         if (inquirerResponse.bidOrAdd == "Add"){
-
+            this.addItemToDatabase();
         }
         if (inquirerResponse.bidOrAdd == "Bid"){
-
+            this.bidOnItemFromDatabase();
         }
     });
 }
 
+//Function that handles UI of adding items to the database
+//Also calls a separate function that actually adds the data to database
+userInterface.prototype.addItemToDatabase = function(){
+    //Attributes to Collect from the user
+    //Name
+    //Description
+    //Price
+    
+}
+
+userInterface.prototype.bidOnItemFromDatabase = function(){
+
+    //Display items as an inquirer list
+}
+
+//Factory function that creates the UI object - prototypes defined above
 function userInterface(){
     
 }
